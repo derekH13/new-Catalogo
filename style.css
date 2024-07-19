@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.interface{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+body{
+    background-color: rgb(15, 15, 15);
+}
+
+.interface-1{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.none{
+    display: none;
+}
+
+.ajustar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    width: 100%;
+    gap: 1.5rem;
+    
+}
+
+.banner{
+    height: 800px;
+    width: 100%;
+}
+
+.logo{
+    height: 40px;
+}
+
+.grid .spinner-border{
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+}
+
+#contato{
+    margin-top: 7rem;
+    height: 50vh;
+    background-color: black;
+}
+
+
+.flex{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.flex li{
+
+list-style: none;
+}
+
+
+
+#contato .flex img{
+    height: 150px;
+}
+
+
+
+.windown{
+    background-color: rgba(0, 0, 0, 0.212);
+    position: fixed;
+    z-index: 33;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+}
+
+#windown{
+    background-color: rgba(0, 0, 0, 0.212);
+    position: fixed;
+    z-index: 33;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2;
+}
+
+#windown.active{
+    background-color: rgba(0, 0, 0, 0.212);
+    position: fixed;
+    z-index: 33;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.voltar{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    transition: .3s;
+}
+
+.voltar:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.voltar svg{
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* =======================lista =============================== */
+
+.lista{
+    margin-top: 10rem;
+}
+
+/* ============================== cards alta =============================== */
+
+.em-alta{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.5rem;
+    min-height: 500px;
+}
+
+.nav-alta{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    border-radius: 30px;
+    align-items: center;
+    height: 50px;
+}
+
+.nav-alta h2{
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: translateY(4px);
+    transition: .2s;
+}
+
+.card{
+    animation: mostrarCard linear .45s normal forwards;
+    transition: .3s;
+}
+
+.card:hover{
+   transform: scale(0.95);
+   cursor: pointer;
+}
+
+.cards-alta{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    width: 100%;
+    gap: 1.5rem;
+    
+}
+
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 90%;
+    border-radius: 30px;
+    transform: translateY(4px);
+    font-weight: 700;
+}
+
+.card-img-top, .card-body{
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+@keyframes mostrarCard{
+    0%{
+        scale: .95;
+    }
+
+    40%{
+        scale: .90;  
+    }
+
+    60%{
+        scale: .95;  
+    }
+
+    100%{
+        scale: 1.02;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    @media (max-width: 1050px){
+
+      
+
+        .ajustar{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+         
+                }
+                
+
+        .navbar-toggler{
+            margin-right: 1rem;
+        }
+    
+        .banner{
+            height: 600px;
+        }
+
+       
+        
+        
+        #contato .flex img{
+            height: 100px;
+        }
+            
+        .flex{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+        }
+
+        .logo{
+            height: 40px;
+            display: none;
+        }
+
+                }
+
+                
+@media (max-width: 610px){
+
+        .banner{
+            height: 300px;
+        }
+
+             
+        .grid{       
+            grid-template-columns: repeat(1, 1fr);       
+            
+            width: 290px;
+        }
+
+        .ajustar{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+                }
+
+        
+
+
+    }
+
+    @media (max-width: 390px){
+
+.voltar{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+    }

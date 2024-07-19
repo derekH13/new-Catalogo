@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <!-- botstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg .bg-black" id="navegation">
+        <div class="interface">
+            <div class="container-fluid" style="display: flex;">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/claquete.png" class="logo" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Genero
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item acao" href="#populares">Ação</a></li>
+                                <li><a class="dropdown-item comedia" href="#populares">Comedia</a></li>
+                                <li><a class="dropdown-item romance" href="#populares">Romance</a></li>
+                                <li><a class="dropdown-item terror" href="#populares">Terror</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#populares">Populares</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" id="form-pesquisa" action="#populares" role="search">
+                        <input class="form-control me-2" id="pesquisa" type="search" placeholder="Filme"
+                            aria-label="Search">
+                        <button class="btn btn-outline-dark botao text-light" type="submit">pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </div><!--interface-->
+    </nav>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.pinimg.com/originals/8b/0f/be/8b0fbe82c3f5bb73eca9f557e8a9879c.jpg"
+                    class="d-block w-100 banner " alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/originals/36/a3/7e/36a37e631856d62ea79f3760ff3a0ce0.jpg"
+                    class="d-block w-100 banner" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/originals/59/14/fc/5914fc03299c0b4d17841acc1cb875c2.jpg"
+                    class="d-block w-100 banner" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div class="interface-1">
+        <section class="em-alta">
+            <div class="nav-alta">
+                <h2 class="op marvel check">Marvel</h2>
+                <h2 class="op star">Star Wars</h2>
+                <h2 class="op harry">Harry Potter</h2>
+                <h2 class="op disney">Disney</h2>
+                <h2 class="op anime">Anime</h2>
+            </div>
+
+            <div class="cards-alta">
+
+            </div>
+        </section>
+    </div><!--interface-->
+
+
+    <div class="interface-1 lista">
+        <h1 class="fw-bold text-light" id="populares">CATALOGO POPULARES</h1>
+        <h4 class="text-light">Faça uma <a href="#navegation">Pesquisa</a> de um filme que goste muito!</h4>
+        <div class="ajustar">
+            <section class="grid mt-5 ">
+
+
+                <div class="spinner-border text-dark" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+
+
+
+            </section>
+        </div><!--ajustar-->
+    </div><!--interface-->
+
+
+    <div class="none">
+        <div class="card" style="width: 18rem;">
+            <img src="https://m.media-amazon.com/images/M/MV5BOGE2NWUwMDItMjA4Yi00N2Y3LWJjMzEtMDJjZTMzZTdlZGE5XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h2 class="card-text">Batman Begins</h2>
+            </div>
+        </div>
+    </div><!--none-->
+
+
+    <div id="windown">
+        <div class="voltar">
+            <?xml version="1.0" ?><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M360 224L272 224v-56c0-9.531-5.656-18.16-14.38-22C248.9 142.2 238.7 143.9 231.7 150.4l-96 88.75C130.8 243.7 128 250.1 128 256.8c.3125 7.781 2.875 13.25 7.844 17.75l96 87.25c7.031 6.406 17.19 8.031 25.88 4.188s14.28-12.44 14.28-21.94l-.002-56L360 288C373.3 288 384 277.3 384 264v-16C384 234.8 373.3 224 360 224zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z" />
+            </svg>
+        </div>
+        <div class="flex">
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://m.media-amazon.com/images/M/MV5BOGE2NWUwMDItMjA4Yi00N2Y3LWJjMzEtMDJjZTMzZTdlZGE5XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2 class="card-text">Batman Begins</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section id="contato">
+        <div class="flex">
+            <a href="" target="_blank">
+                <li><img src="./img/instagram.png" alt=""></li>
+            </a>
+            <a href="https://github.com/derekH13" target="_blank">
+                <li><img src="./img/github.png" alt=""></li>
+            </a>
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                target="_blank">
+                <li><img src="./img/linkedin.png" alt=""></li>
+            </a>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./dist/bundle.js"></script>
+    <script src=""></script>
+</body>
+
+</html>
