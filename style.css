@@ -35,7 +35,7 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     width: 100%;
-    gap: 1.5rem;
+    gap: 1.9rem;
     
 }
 
@@ -79,7 +79,7 @@ list-style: none;
 
 
 #contato .flex img{
-    height: 150px;
+    height: 100px;
 }
 
 
@@ -176,20 +176,54 @@ list-style: none;
     text-align: center;
     border-radius: 30px;
     align-items: center;
-    height: 50px;
+    height: 40px;
 }
 
 .nav-alta h2{
-    font-size: 30px;
+    font-size: 1.7rem;
     font-weight: 600;
     cursor: pointer;
-    transform: translateY(4px);
     transition: .2s;
 }
 
 .card{
     animation: mostrarCard linear .45s normal forwards;
     transition: .3s;
+    position: relative;
+    background-color: rgb(247, 247, 247);
+    border: none;
+    border-radius: 30px;
+    
+}
+
+.card .favorito{
+    position: absolute;
+    width: min-content;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    pointer-events:painted
+}
+
+.card .favorito path{
+
+     fill:  rgb(240, 240, 240);
+     transition: .2s;
+     
+}
+
+.card .favorito:hover path{
+    stroke: rgb(255, 0, 0);
+    fill: rgb(255, 0, 0);
+    
+}
+
+.card .card-img-top{
+    aspect-ratio: 3/4;
+    border-radius: 30px;
 }
 
 .card:hover{
@@ -202,7 +236,7 @@ list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     width: 100%;
-    gap: 1.5rem;
+    gap: 1.9rem;
     
 }
 
@@ -213,19 +247,33 @@ list-style: none;
     background-color: red;
     margin-left: 3px;
     margin-right: 3px;
-    height: 90%;
+    margin-top: 1.5px;
+    padding: 2px;
     border-radius: 30px;
-    transform: translateY(4px);
     font-weight: 700;
+
 }
 
 .card-img-top, .card-body{
     pointer-events: none;
 }
 
+.card-body h2{
+    font-size: 1.4rem;
+}
 
+.fav{
+    min-height: 400px;
+}
 
+.container-fav{
+    margin-top: 3.5rem;
+}
 
+.container-fav .card{
+
+    width: 15rem;
+}
 
 
 
