@@ -33,7 +33,7 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     width: 100%;
     gap: 1.9rem;
     
@@ -234,7 +234,7 @@ list-style: none;
 .cards-alta{
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     width: 100%;
     gap: 1.9rem;
     
@@ -272,7 +272,7 @@ list-style: none;
 
 .container-fav .card{
 
-    width: 15rem;
+    min-width: 100%;
 }
 
 
@@ -327,7 +327,37 @@ list-style: none;
             height: 600px;
         }
 
-       
+        span.navbar-toggler-icon{
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+
+      
+
+       .disney, .harry{
+        display: none
+       }
+
+       .nav-alta{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       }
+
+       .op{
+        transform: translateY(4px);
+       }
+
+       h2.op{
+        font-size: 1.5rem;
+       }
+
+       .check{
+        padding-left: 7px;
+        padding-right: 7px;
+        
+
+       }
         
         
         #contato .flex img{
@@ -359,11 +389,6 @@ list-style: none;
         }
 
              
-        .grid{       
-            grid-template-columns: repeat(1, 1fr);       
-            
-            width: 290px;
-        }
 
         .ajustar{
             width: 100%;
@@ -388,5 +413,9 @@ list-style: none;
     justify-content: center;
     margin-top: 1rem;
 }
+
+
+
+
 
     }
