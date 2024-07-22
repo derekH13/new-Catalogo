@@ -33,7 +33,7 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     width: 100%;
     gap: 1.9rem;
     
@@ -267,7 +267,11 @@ list-style: none;
 }
 
 .container-fav{
-    margin-top: 3.5rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 260px));
+    width: 100%;
+    gap: 1.9rem;
 }
 
 .container-fav .card{
@@ -361,7 +365,7 @@ list-style: none;
 
        .grid{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
         width: 100%;
         gap: 1.9rem;
         
@@ -386,6 +390,14 @@ list-style: none;
             height: 40px;
             display: none;
         }
+        
+        .container-fav{
+            margin-top: 5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 21fr));
+            width: 100%;
+            gap: 1.9rem;
+        }
 
                 }
 
@@ -405,6 +417,13 @@ list-style: none;
 
                 }
 
+                .grid{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+                    width: 100%;
+                    gap: 1.9rem;
+                    
+                }
         
 
 
